@@ -63,18 +63,26 @@ a:hover {
 }
 
 .hero {
-    position: relative;
-    width: 1366px;
+    /* position: relative;
+    width: auto;
     height: 945px;
     margin-left: auto;
     margin-right: auto;
     display: block;
-    margin-top: -8px;
+    margin-top: -8px; 
     object-fit: cover;
     object-position: 0% 64%;
-    background-position: center center;
+    background-position: center center; 
+    background-repeat: no-repeat; */
+    object-fit: cover;
+    object-position: 0% 24%; 
+    height: 940px;
     background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
+
+
 
 .site-navbar-wrap {
     position: absolute;
@@ -550,4 +558,39 @@ a:hover {
     bottom: 0%;
     height: 70px;
     width: 93px;
+    
+}
+
+
+.splide__track{
+    margin-top:70px;
+}
+
+
+
+.splide__track img{
+    height: 370.74px;
+    width: 303.68px;
+}
+
+.bg2 {
+    background-image: url('../../img/bg2.jpg');
+    height: 940px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg2 button{
+     background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    border: 2px solid black;
+    border-radius: 23px;
+    color:white;
+    border-color:white;
+    padding: 7px 15px 7px 15px;
 }

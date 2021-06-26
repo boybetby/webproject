@@ -20,72 +20,99 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="website-menu-07/css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="splide-2.4.21/dist/js/splide.min.js">
+
+    <!-- or the one installed in node_modules directory, -->
+
+    
+    <!-- or the reference on CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
 </head>
 
 <body>
-
-
-    <div>
-        <div class="hero" style="background-image:url('img/bg1.jpg');text-align: center;">
-            <div class="site-navbar site-navbar-target js-solid-header">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-1" style="margin-bottom: 5%;">
-                            <a href="#"><img src="img/yen.png" class="yen"></a>
-                            <!-- <h1 class="my-0 site-logo"><a href="index.html">yên</a></h1> -->
-                        </div>
-                        <div class="col-9">
-                            <nav class="site-navigation text-left" role="navigation">
-                                <div class="container">
-
-
-                                    <ul class="site-menu main-menu js-clone-nav d-none d-lg-block">
-                                        <li class="active"><a href="#home-section" class="nav-link" style="color:white;">PRODUCT</a></li>
-                                        <li><a href="#classes-section" class="nav-link" style="color:white;">GREEN DECORATION</a></li>
-                                        <!-- <li class="has-children">
-                                            <a href="#" class="nav-link">Pages</a>
-                                            <ul class="dropdown arrow-top">
-                                                <li><a href="#" class="nav-link">Team</a></li>
-                                                <li><a href="#" class="nav-link">Pricing</a></li>
-                                                <li><a href="#" class="nav-link">FAQ</a></li>
-                                                <li class="has-children">
-                                                    <a href="#">More Links</a>
-                                                    <ul class="dropdown">
-                                                        <li><a href="#">Menu One</a></li>
-                                                        <li><a href="#">Menu Two</a></li>
-                                                        <li><a href="#">Menu Three</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li> -->
-                                        <li><a href="#workshop-section" class="nav-link" style="color:white;">WORKSHOP</a></li>
-                                        <li><a href="#about-section" class="nav-link" style="color:white;">ABOUT US</a></li>
-                                    </ul>
-                                </div>
-                            </nav>
-                        </div>
-                        <div class="col-2">
-                            <div style="display:inline;">
-                                <a href="#" style="color:white;"><img src="img/carticon.png" style="width:40px;height: 40px;font-family: lato;font-style: normal;">Cart</a>
-
-                                <div style="display:inline;margin-right: 20px;"></div>
-
+    <div class="main">
+        <div>
+            <div class="hero" style="background-image:url('img/bg1.png');">
+                <div class="site-navbar site-navbar-target js-solid-header">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-1" style="margin-bottom: 5%;">
+                                <a href="#"><img src="img/yen.png" class="yen"></a>
+                                <!-- <h1 class="my-0 site-logo"><a href="index.html">yên</a></h1> -->
                             </div>
-                            <div style="display:inline;">
-                                <a href="#"><img src="img/pngwing.png" style="width:29px;height: 29px;"></a>
+                            <div class="col-9">
+                                <nav class="site-navigation text-left" role="navigation">
+                                    <div class="container">
+                                        <ul class="site-menu main-menu js-clone-nav d-none d-lg-block">
+                                            <li class="active"><a href="#home-section" class="nav-link" style="color:white;">PRODUCT</a></li>
+                                            <li><a href="#classes-section" class="nav-link" style="color:white;">GREEN DECORATION</a></li>                                    
+                                            <li><a href="#workshop-section" class="nav-link" style="color:white;">WORKSHOP</a></li>
+                                            <li><a href="#about-section" class="nav-link" style="color:white;">ABOUT US</a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="col-2">
+                                <div style="display:inline;">
+                                    <a href="#" style="color:white;"><img src="img/carticon.png" style="width:40px;height: 40px;opacity:0.8"><p style="display:inline;font-size:20px;color:white;">Cart</p></a>
+                                    
+                                    <div style="display:inline;margin-right: 20px;"></div>
+                                </div>
+                                <div style="display:inline;">
+                                    <a href="#"><img src="img/pngwing.png" style="width:24px;height: 24px;opacity:0.8"></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <script src="website-menu-07/js/jquery-3.3.1.min.js"></script>
+        <script src="website-menu-07/js/popper.min.js"></script>
+        <script src="website-menu-07/js/bootstrap.min.js"></script>
+        <script src="website-menu-07/js/jquery.sticky.js"></script>
+        <script src="website-menu-07/js/main.js"></script>
+
+        <div class="" style="text-align: center;margin-top:100px;">
+            <h1 style="font-weight:bold;">Green Furniture Collection</h1>
+
+            <div class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide" style="margin-right:10px;"><img src="img/furniture/img1.png"></li>
+                        <li class="splide__slide"  style="margin-right:10px;"><img src="img/furniture/img2.png"></li>
+                        <li class="splide__slide" style="margin-right:10px;"><img src="img/furniture/img3.png"></li>
+                        <li class="splide__slide" style="margin-right:10px;"><img src="img/furniture/img4.png"></li>
+                        <li class="splide__slide" style="margin-right:10px;"><img src="img/furniture/img5.png"></li>
+                        <li class="splide__slide"  style="margin-right:10px;"><img src="img/furniture/img6.png"></li>
+                    </ul>
+                </div>
+            </div>
+            <script>
+                document.addEventListener( 'DOMContentLoaded', function () {
+                    new Splide( '.splide',{
+                        perPage: 4,
+                        perMove: 1,
+                    } ).mount();
+                } );
+            </script>
+        </div>
+
+        <div>
+            <h1 style="text-align:center;margin-top:100px;font-weight:bold;margin-bottom:50px;">We have more than just a plant</h1>
+            <div class="bg2">
+                <div style="padding-top:790px;padding-left:43px;">
+                    <h1 style="font-weight:bold;color:white;">GREEN DECORATION COLLECTION</h1>
+                    <button>DISCOVER NOW</button>
+                </div>
+            </div>
+        </div>
+
     </div>
 
-    <script src="website-menu-07/js/jquery-3.3.1.min.js"></script>
-    <script src="website-menu-07/js/popper.min.js"></script>
-    <script src="website-menu-07/js/bootstrap.min.js"></script>
-    <script src="website-menu-07/js/jquery.sticky.js"></script>
-    <script src="website-menu-07/js/main.js"></script>
 </body>
 
 </html>
