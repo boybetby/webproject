@@ -277,3 +277,44 @@ nav ul li a {
     color:white;
 }
 
+.sologan {
+    text-align: center;
+    padding-top: 400px;
+}
+
+.sologan h1{
+    font-family: Montserrat;
+    color:white;
+    vertical-align: middle;
+}
+
+
+
+.wrapper_product{
+    object-fit: cover;
+    height: 520px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.col-lg-3 {
+    margin: 40px;
+    margin-top: 50px;
+    height: 374.72px;
+}
+
+.col-lg-3 img{
+    height: 400px;
+}
+
+.col-lg-3 p {
+    text-align: left;
+}
+
+.productshow {
+    text-align: center;
+    margin-top: 150px;
+}
