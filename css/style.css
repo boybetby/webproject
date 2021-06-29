@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;1,100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap');
 body {
@@ -11,8 +12,6 @@ body {
     position: relative;
 
 }
-
-
 
 .yen {
     position: absolute;
@@ -235,7 +234,14 @@ nav ul li a {
     background-size: cover;
 }
 
-
+.wrapper_greendecoration{
+    object-fit: cover;
+    object-position: 0% 24%; 
+    height: 800px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
 
 .menu {
     width: 100%;
@@ -300,9 +306,6 @@ nav ul li a {
 
 
 
-.col-3 {
-
-}
 
 .col-lg-3 img{
     height: 400px;
@@ -312,3 +315,52 @@ nav ul li a {
     text-align: left;
 }
 
+.container-fluid button{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    border: 2px solid black;
+    border-radius: 40px;
+    color:#222020;
+    border-color:#222020;
+    padding: 7px 20px 7px 20px;
+    font-size:30px;
+    font-weight: bold;
+}
+
+.introduce h1{
+    font-family: Poppins;
+    font-weight: bold;
+}
+
+.introduce  p{
+    font-family: Montserrat;
+    color:black;
+    font-weight:bold;
+    margin-top:20px;
+}
+
+
+
+
+.col-md-6 img{
+    height: 900px;
+}
+
+.col-md-6 p{ 
+    color:black;
+    text-align: left;
+}
+
+.furniture_bg2{
+    margin-top:  100px;
+    object-fit: cover;
+    height: 713px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    object-position: 0% 24%; 
+}
