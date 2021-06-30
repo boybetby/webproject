@@ -364,3 +364,72 @@ nav ul li a {
     background-size: cover;
     object-position: 0% 24%; 
 }
+
+.divided{
+    margin-top: 150px ;
+    border-bottom: 1px solid black;
+}
+
+.detail p{
+    color:black;
+    font-size: 25px;
+    font-family: Montserrat;
+    font-weight: 600;
+}
+
+.detail img{
+  border-radius: 20px;
+
+}
+
+.description p{
+    font-size:17px;
+    font-family: Montserrat;
+    color:black;
+}
+
+.addtocart button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    border: 1px solid black;
+    border-radius: 40px;
+    color:#222020;
+    border-color:#222020;
+    padding: 7px 50px 7px 50px;
+    font-size:20px;
+    font-weight: 500;
+}
+
+.cart{
+    margin:15px;
+    background-color:lightgray;
+    background-size:fit;
+}
+
+.cart p{
+    font-family: Montserrat;
+    color: black;
+    font-size:25px;
+}
+
+.remove a{
+    transition: color 1s; /* For modern browsers */
+}
+
+.remove a:hover{
+    color: pink;
+}
+
+.checkout button{
+    font-family: Lato;
+    font-weight: bold;
+    color:white;
+    background-color:black;
+    border:none;
+    font-size: 20px;
+    border-radius:10px;
+}

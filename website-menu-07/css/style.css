@@ -1,16 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;1,100&display=swap');
-body {
-    font-family: Lato;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
-    background-color: #fff;
-    height: 200vh;
-    position: relative;
-}
-
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap');
 
 p {
     color: #b3b3b3;
@@ -92,7 +81,6 @@ a:hover {
 
 .logo {
     line-height: 60px;
-
     float: left;
     margin: 16px 66px;
     color: #fff;
@@ -182,3 +170,5 @@ nav ul li a {
     background-repeat:no-repeat;
 
 }
+
+
