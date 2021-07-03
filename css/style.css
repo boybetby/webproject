@@ -433,3 +433,59 @@ nav ul li a {
     font-size: 20px;
     border-radius:10px;
 }
+
+
+.infoform{
+    
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+    height: 1000px;
+    
+    background-image: url('../img/bg1.jpg');
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.box{
+    width: 500px;
+    height: 800px;
+    box-shadow: 0 15px 30px 0 rgba(black, .2);
+}
+
+
+#formsize {
+
+    padding-top: 50px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 900px;
+    height: 800px; 
+    background-color: rgba(255, 255, 255, .7) 
+}
+
+#formsize h1{
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: Lato;
+    color:black;
+    font-weight: 1000;
+}
+
+#formsize input{
+    border-radius: 10px;
+    border-width: 3px;
+    color: black;
+    background-color:white;
+    opacity: 1;
+}
+
+#formsize label{
+    font-weight: bold;
+}
+
+#formsize input[type=submit]{
+    margin-top: 20px;
+}
