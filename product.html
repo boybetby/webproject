@@ -41,18 +41,41 @@
                             <li><a href="workshop.html">WORKSHOP</a></li>
                             <li><a href="#">ABOUT US</a></li>    
                             <li style="margin-left:200px;"><a href="cart.html" style="color:white;"><img src="img/carticon.png" style="width:40px;height: 40px;"></a></li>
-                            <li><a href="#"><img src="img/pngwing.png" style="width:24px;height: 24px;"></a></li>      
+                            
                          </ul> 
                       </div>
                    </nav>
                 </header>
+                
                 <div class="sologan" style="padding-top:300px;">
+                    <div class="search-icon" style="margin-top:250px">
+                        <input class="search-icon__input" placeholder="Search ..."> 
+                        <div class="search-icon__wrapper">
+                          <div class="search-icon__glass"></div>
+                          <div class="search-icon__handle"></div>
+                        </div>
+                      </div>
+                    <script>
+                        const searchIcon = document.querySelector(".search-icon__wrapper");
+                        searchIcon.addEventListener("click", e => searchIcon.parentElement.classList.toggle("open"))         
+                    </script>
                     <h1 style="font-weight:bold;font-size: 50px;margin-bottom:20px;">GET YOUR GREEN</h1>
                 </div>
             </div>    
         </div>
+
+      
         
-        <div class="container-fluid" style="margin-top:200px;">
+        <form method="get" action="">
+            <div class="form__group field" style="margin:50px 50px 0 auto;">
+                <input type="input" class="form__field" placeholder="Name" name="name" id='name'/>
+                <label for="name" class="form__label">Name</label>
+              </div>
+        </form>
+        
+            
+
+        <div class="container-fluid" style="margin-top:50px;">
             <div class="row gx-6">
                 <div class="col-lg-3" style="margin-bottom:130px;justify-content: center;display: flex;">
                     <div style="height:400px;width:300px">
