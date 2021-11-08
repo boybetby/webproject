@@ -15,6 +15,12 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap');
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    .checked {
+      color: orange;
+    }
+    </style>
 </head>
 <body>
     <div class="wrapper"  style="background-image:url('img/bg1.png');height:120px;">
@@ -72,7 +78,68 @@
                     </div>    
                 </div>
             </div>
+            <div class='commentssection'>
+                <h1>Comments</h1>
+                <form>
+                    <div class='comment'>
+                        <input type="checkbox" id="anonymous" name="anonymous" value="anonymous" onclick="document.getElementById('name').disabled=this.checked;">
+                        <label for="anonymous">Comment as Anonymous</label><br>
+                        <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+                        <textarea id="commentbox" name="commentbox" rows="4" cols="50"> </textarea>
+                        <fieldset class="rating">
+
+                            <input id="demo-1" type="radio" name="demo" value="1"> 
+                            <label for="demo-1">1 star</label>
+                            <input id="demo-2" type="radio" name="demo" value="2">
+                            <label for="demo-2">2 stars</label>
+                            <input id="demo-3" type="radio" name="demo" value="3">
+                            <label for="demo-3">3 stars</label>
+                            <input id="demo-4" type="radio" name="demo" value="4">
+                            <label for="demo-4">4 stars</label>
+                            <input id="demo-5" type="radio" name="demo" value="5">
+                            <label for="demo-5">5 stars</label>
+                            
+                            <div class="stars">
+                                <label for="demo-1" aria-label="1 star" title="1 star"></label>
+                                <label for="demo-2" aria-label="2 stars" title="2 stars"></label>
+                                <label for="demo-3" aria-label="3 stars" title="3 stars"></label>
+                                <label for="demo-4" aria-label="4 stars" title="4 stars"></label>
+                                <label for="demo-5" aria-label="5 stars" title="5 stars"></label>   
+                            </div>
+                            
+                        </fieldset>
+                        <button class="button" type="submit">Comment</button>
+                    </div>
+                    
+                </form>
+                <ul>
+                    <li >
+                        <div class="row">
+                            <div class='col-lg-3'>
+                                <p>Nguyen Nhat Minh</p>
+                            </div>
+                            <div class='col-lg-8' style="text-align:left;">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <p style="font-weight: 500;">Do ngonn Do ngonn Do ngonn Do ngonn Do ngonnDo ngonn Do ngonn Do ngonn Do ngonnDo ngonn Do ngonn vDo ngonnDo ngonnDo ngonnDo ngonnDo ngonnDo ngonnDo ngonnDo ngonnDo ngonn</p>
+                        </div>
+                        <div style="width:400px;"><p style="border-bottom: 1px solid lightgray;"></p></div>
+                    </li>
+
+                    
+                </ul>
+            </div>
         </div>
+
+        
+
+
     </main>
     <div style="width:800px;display:table;margin:0 auto;"><p class="divided"></p></div>
     <footer style="display: flex;margin-top:100px;margin-left:220px;margin-bottom:140px;">
