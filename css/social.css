@@ -36,7 +36,8 @@
 
 #postcard {
     border-radius: 20px;
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     background-color: white;
     width: 700px;
     padding: 15px 30px 30px 30px;
@@ -89,6 +90,36 @@
     color: black;
     font-weight: 400;
 }
+
+.interact{
+    width: 100%;
+    height: fit-content;
+}
+
+.comments{
+    margin-top: 10px;
+    padding-left: 15px;
+}
+
+.comments p {
+  display: inline-block;
+  font-size: 16px;
+  margin: 0;
+  padding-top: 5px;
+}
+
+.postcomment{
+  margin-top: 20px;
+  height: 60px;
+}
+
+.postcomment input{
+  padding: 10px 10px 10px 10px;
+  height: 60px;
+  border: 1px solid #ebebeb;
+  width: 100%;
+}
+
 
 .card-bordered {
     border: 1px solid #ebebeb;
@@ -166,6 +197,8 @@ h4.card-title {
     padding: 15px 20px;
     border-bottom: 1px solid rgba(77, 82, 89, 0.07)
 }
+
+
 
 .ps-container {
     position: relative
@@ -493,35 +526,7 @@ textarea {
     margin-right: 10px;
   }
 
-  .interact{
-      width: 100%;
-      height: fit-content;
-  }
-
-  .comments{
-      margin-top: 10px;
-      padding-left: 15px;
-  }
-
-  .comments p {
-    display: inline-block;
-    font-size: 16px;
-    margin: 0;
-    padding-top: 5px;
-  }
-
-  .postcomment{
-    margin-top: 20px;
-    height: 60px;
-  }
-
-  .postcomment input{
-    padding: 10px 10px 10px 10px;
-    height: 60px;
-    border: 1px solid #ebebeb;
-    width: 100%;
-  }
-  
+ 
   
   /* ------------------------------- */
   /* Cardbox Base
