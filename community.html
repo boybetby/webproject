@@ -12,6 +12,9 @@
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+        <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap');
         </style>
@@ -21,6 +24,26 @@
           color: orange;
         }
         </style>
+        <script>
+            function readURL(input) {
+                 if (input.files && input.files[0]) {
+                     var reader = new FileReader();
+
+                     reader.onload = function (e) {
+                         $('#blah')
+                             .attr('src', e.target.result)
+                             .width(200)
+                             .height(150);
+                        document.getElementById("blah").style.visibility = "visible";
+                        document.getElementById("blah").style.margin = "15px 0 15px 0";
+                     };
+                     document.getElementById("addpost").style.height = "330px";
+                     reader.readAsDataURL(input.files[0]);
+                     
+                 }
+                 
+             }
+        </script>
     </head>
 
     <body>
@@ -65,6 +88,23 @@
                         <div class="cart" style="margin-left: 30px; margin-right:30px; border-radius: 10px;">
                             <div class="row" style="width:100%">
                                 <div class="col-8" id="socialcontent">
+
+                                    <form>
+                                        <div id="addpost">
+                                            <p>Share your green</p>
+                                            <div class="input">
+                                                <input type="text" id="inputcontent" placeholder="Tell us about your green place.">
+                                                
+                                                <label for="inputimage" style="float: right;">
+                                                    <img src="img/imageicon.png" height="40px" width="40px"/>
+                                                    </label>
+                                                <input type="file" id="inputimage" accept="image/*" onchange="readURL(this);">
+                                                <img id="blah" src="#" alt="your image" style="visibility: hidden; height: 0;padding-left: 5px;"/>
+                                            </div>
+                                            <button type="submit">Post</button>                
+                                        </div>
+                                    </form>
+                                   
 
                                     <!-- loop this -->
                                     <div id="postcard">
