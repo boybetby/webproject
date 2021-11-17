@@ -44,11 +44,18 @@
                  
              }
 
-             function openLoginForm(){
+            function openLoginForm(){
                 document.body.classList.add("showLoginForm");
             }
             function closeLoginForm(){
                 document.body.classList.remove("showLoginForm");
+            }
+
+            function openSignupForm(){
+                document.body.classList.add("showSignupForm");
+            }
+            function closeSignupForm(){
+                document.body.classList.remove("showSignupForm");
             }
         </script>
     </head>
@@ -77,9 +84,9 @@
             </header>
         </div>   
         
-
+        <!-- Login -->
         <div class="popup-overlay"></div>
-            <div class="popup">
+        <div class="popup">
             <div class="popup-close" onclick="closeLoginForm()">×</div>
             <div class="form">
                 <div class="avatar">
@@ -100,7 +107,37 @@
                     <button>Login</button>
                 </div>
             </div>
+        </div>
+
+        <!-- Sign-up -->
+        <div class="popup-signup-overlay"></div>
+        <div class="popup-signup">
+            <div class="popup-close-signup" onclick="closeSignupForm()">×</div>
+            <div class="form-signup">
+                <div class="avatar">
+                    <img src="img/yen.png" alt="">
+                </div>
+                <div class="header">
+      
+                </div>
+                <div class="element">
+                    <label for="username">Username</label>
+                    <input type="text" id="username">
+                </div>
+                <div class="element">
+                    <label for="fullname">Full name</label>
+                    <input type="text" id="fullname">
+                </div>
+                <div class="element">
+                    <label for="password">Password</label>
+                    <input type="password" id="password">
+                </div>
+                <div class="element">
+                    <button>Sign-up</button>
+                </div>
             </div>
+        </div>
+        <!-- end signup -->
 
         <main>
             <div class="">
@@ -127,7 +164,7 @@
                                     Login
                                 </div>
                             </a>
-                           <a href="#">
+                           <a href="#" onclick="openSignupForm()">
                             <div>
                                 Sign-up
                             </div>
@@ -197,14 +234,29 @@
                                             </div>
 
                                             <div class="comments">
-                                                <div>
-                                                    <p style="font-weight: bold;">
-                                                        Nhat Minh
-                                                    </p>
-                                                    <p>
-                                                        xin chao
-                                                    </p>
+                                                <div >
+                                                    <div class="row">
+                                                        <div style="height: fit-content;" class="col-8">
+                                                            <p style="font-weight: bold;">
+                                                                Nhat Minh
+                                                            </p>
+                                                            <p style=" word-break: break-all; ">
+                                                                xin chao
+                                                            </p>
+                                                        </div>
+                                                            <div class="col-4">
+                                                                <p style="float: right;padding-right: 20px;"> 
+                                                                    06/12/2021
+                                                                </p>
+                                                            </div>
+                                                            
+                                                       
+                                                    </div>
                                                 </div>
+                                                
+                                                
+
+
                                                 <div>
                                                     <p style="font-weight: bold;">
                                                         Gia Bao
@@ -224,7 +276,16 @@
                                             </div>
 
                                             <div class="postcomment">
-                                                <input placeholder="Write a comment" type="text">
+                                                <div class="row">
+                                                    <div class="col-9">
+                                                        <input placeholder="Write a comment" type="text">
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <input type="submit" value="Comment" style="text-align: center;">
+                                                    </div>
+                                                </div>
+                                                
+                                                
                                             </div>
                                            	  
                                         </div>
@@ -400,19 +461,20 @@
                                                                 <div class="media media-meta-day">Today</div>
 
                                                                 <div class="media media-chat media-chat-reverse">
+                                                                   
                                                                     <div class="media-body">
+                                                                        <div style="float: right;font-weight: 400;">Minh</div>
                                                                         <p>Hiii, I'm good.</p>
-                                                                        <p>How are you doing?</p>
-                                                                        <p>Long time no see! Tomorrow office. will be free on sunday.</p>
-                                                                        <p class="meta"><time datetime="2018">00:06</time></p>
+                                                                        
                                                                     </div>
                                                                 </div>
 
                                                                 <div class="media media-chat">
+                                                                    
                                                                     <div class="media-body">
-                                                                        <p>Okay</p>
+                                                                        <div style="font-weight: 400;">Minh</div>
                                                                         <p>We will go on sunday? </p>
-                                                                        <p class="meta"><time datetime="2018">00:07</time></p>
+                         
                                                                     </div>
                                                                 </div>
 
